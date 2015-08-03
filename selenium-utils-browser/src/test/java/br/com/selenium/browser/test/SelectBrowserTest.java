@@ -12,6 +12,16 @@ public class SelectBrowserTest {
 
     @Test
     public void selectChromeBrowserTest(){
-        BrowserFactory.create("Chrome");
+        driver = BrowserFactory.create("Chrome");
+    }
+
+    @Test
+    public void selectFirefoxBrowserTest(){
+        driver = BrowserFactory.create("Firefox");
+    }
+
+    @Test
+    public void selectSafariBrowserTest(){
+        driver = BrowserFactory.create("Safari");
     }
 }
